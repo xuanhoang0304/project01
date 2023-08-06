@@ -45,13 +45,19 @@ a {
     background-color: #e6f0ff;
     height: 100vh;
     position: relative;
+    padding-top: 38px;
 }
 
 /* Navbar */
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+}
+.fixed{
+    position: sticky;
+    top: 4px;
+    left: 0;
+    background: #e6f0ff;
 }
 
 .navbar ul {
@@ -279,7 +285,8 @@ a {
 }
 
 .feature .list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 70px;
 }
@@ -349,12 +356,16 @@ a {
 
 .stats .stat-header {
     display: flex;
-    position: relative;
+   
 }
 
 .stats .img-block,
 .stats .info-block {
     width: 50%;
+}
+
+.stats .img-block{
+    position: relative;
 }
 
 .stats .img-block .image {
@@ -368,6 +379,7 @@ a {
 
 .stats .info-block {
     padding: 79px 0 0 165px;
+
 }
 
 .stats .info-block .title {
